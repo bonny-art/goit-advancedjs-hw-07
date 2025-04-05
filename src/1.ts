@@ -5,15 +5,13 @@
 */
 
 class Student {
-  public name: string;
-  public age: number;
-  public grade: string;
-
-  constructor(name: string, age: number, grade: string) {
-    this.name = name;
-    this.age = age;
-    this.grade = grade;
-  }
+  constructor(public name: string, public age: number, public grade: string) {}
 }
+
+const student1 = new Student("Іван", 16, "10-Б");
+
+console.log(`Ім'я: ${student1.name}`);
+console.log(`Вік: ${student1.age}`);
+console.log(`Клас: ${student1.grade}`);
 
 export {};
